@@ -24,7 +24,7 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
     <MenuItem
       active={selected === title}
       style={{ color: colours.grey[100] }}
-      onclick={() => setSelected(title)}
+      onClick={() => setSelected(title)}
       icon={icon}
     >
       <Typography>{title}</Typography>
@@ -173,7 +173,7 @@ const Sidebar = () => {
             />
             <Item
               title="FAQ Page"
-              to="/faw"
+              to="/faq"
               icon={<HelpOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
